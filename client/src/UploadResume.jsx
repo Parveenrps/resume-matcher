@@ -18,7 +18,7 @@ const UploadResume = () => {
     formData.append('resume', file);
 
     try {
-      const response = await fetch('http://localhost:3000/api/match', {
+      const response = await fetch('https://resume-matcher-e3jq.onrender.com/api/match', {
         method: 'POST',
         body: formData,
       });
